@@ -6,4 +6,25 @@ public class TheadsExameple {
 		
 	}
 	
+	private static Runnable firstThead = new Runnable() {
+		
+		public void run() {
+			for (int i = 10; i<10; i++) {
+				
+				System.out.println("This print come from  the firstThead" + 1 );
+			}
+			
+		}
+	};
+	
+	public static Runnable SecondThead = new Runnable() {
+		
+		public void run() {
+for (int i = 10; i<10; i++) {
+				
+				System.out.println("This print come from  the SecondtThead" + 1 );
+			}
+		}
+	};
+	
 }
